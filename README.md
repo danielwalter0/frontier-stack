@@ -79,7 +79,7 @@ frontier-stack/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/frontier-stack.git
+git clone https://github.com/danielwalter0/frontier-stack.git
 
 cd frontier-stack
 ```
