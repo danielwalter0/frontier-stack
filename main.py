@@ -7,6 +7,9 @@ import asyncio
 
 articles = collect_hackernews()
 
+print("ARTICLES:")
+print(articles)
+
 # Pass the article list directly
 gemini_output = generate_posts(articles)
 
