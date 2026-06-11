@@ -170,13 +170,18 @@ def generate_posts(articles):
             ensure_ascii=False,
             separators=(",", ":")
         )
+        
+        prompt = PROMPT.replace(
+            "{articles}", 
+            articles_json
+        )
 
+        print(prompt[:5000])
+        
         response = client.models.generate_content(
             model="gemini-2.5-flash-lite",
-            contents=PROMPT.replace(
-                "{{ARTICLES}}",
-                articles_json
-            ),
+            contents=prompt,
+            
             config={
                 "response_mime_type": "application/json",
                 "temperature": 0.5,
