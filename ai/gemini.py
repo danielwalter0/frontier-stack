@@ -139,7 +139,7 @@ SUMMARY RULES
 
 ARTICLES:
 
-{ARTICLES}
+{articles}
 
 Process:
 
