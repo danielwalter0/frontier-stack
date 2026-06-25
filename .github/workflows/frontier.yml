@@ -5,8 +5,8 @@ permissions:
 
 on:
   schedule:
-    - cron: '0 5 * * *'
-    - cron: '0 17 * * *'
+    - cron: '0 9 * * *'
+      timezone: "Europe/London"
 
   workflow_dispatch:
 
